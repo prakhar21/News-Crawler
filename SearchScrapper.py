@@ -52,7 +52,7 @@ def SendPostRequest(url,p):
     except Exception as e:
         print e
 
-'''
+
 #BeautifulSoup Obj Creator
 def CreateBeautifulSoupObj(s):
     soup = BeautifulSoup(s)
@@ -160,10 +160,10 @@ for i in news_summary[:]:
 
 tweet_response = raw_input("Do you want to tweet the news(y/n): ").lower()
 
-ckey = 'QMnucKw3xZ57tjf1ZXQmitkg8'
-csecret = 'l2BGiHUVDE7rEAs2pfQ7H2b4hxnPh30PhFIpLVFZ0ExYDFSy5K'
-atoken = '285448554-u28HxHmKOaxqg0OAASwraH0jUKlT3ZToKUy9DrB8'
-asecret = 'QhmW7Wixxq5bqdkFyuLKma6GTWg2O1M9K3tXgc0W1Pi49'
+ckey = 'Insert Consumer Key'
+csecret = 'Insert Conksumer Key'
+atoken = 'Insert Access Token'
+asecret = 'Insert Token secret'
 
 auth = tweepy.OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
@@ -176,9 +176,7 @@ if tweet_response == 'y':
 if tweet_response == 'n':
     print '\n\nWe respect your decision\n'
 
-'''
 
-'''
 for i in final_news[:3]:
     print i
 ############################################################################
